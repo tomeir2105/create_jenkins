@@ -4,8 +4,8 @@ This project automates the creation and setup of a Jenkins master container and 
 
 # Notes
 - **During setup, all Docker containers, volumes, and images will be deleted**.
-- create the Nodes in Jenkins
-- add /home/jenkins as the folder
+- After script finishes, create the Nodes in Jenkins
+- use /home/jenkins as the Remote root directory.
 - use the agent IP as printed in the script.
 - Add the PRIVATE KEY (printed when the script ends) to the user profile.
 - Select "Manually trusted key verification strategy" in Jenkins SSH settings and add the generated private key from `./agent1/.ssh/id_rsa`.
