@@ -2,6 +2,15 @@
 
 This project automates the creation and setup of a Jenkins master container and three agent containers using Docker. The agents support SSH access, Java, and Python environments.
 
+# Notes
+After install Finished :
+- update the ssh-slaves plugin from jenkins-cli.
+- create the Nodes in Jenkins
+- add /home/jenkins as the folder
+- use the agent IP as printed in the script.
+- Add the PRIVATE KEY (printed when the script ends) to the user profile.
+- Select "Manualy trusted key verification strategy" in the ssh connection settings.
+  
 ## Features
 
 - Jenkins master with persistent volume
