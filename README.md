@@ -3,7 +3,7 @@
 This project automates the creation and setup of a Jenkins master container and three agent containers using Docker. The agents support SSH access, Java, and Python environments.
 
 # Notes
-- During setup, all Docker containers, volumes, and images will be deleted.
+- **During setup, all Docker containers, volumes, and images will be deleted**.
 - create the Nodes in Jenkins
 - add /home/jenkins as the folder
 - use the agent IP as printed in the script.
