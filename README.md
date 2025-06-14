@@ -4,16 +4,18 @@ This project automates the creation and setup of a Jenkins master container and 
 
 # Notes
 After install Finished :
-- update the ssh-slaves plugin from jenkins-cli.
-  -- Create a Jenkins user Token
-  -- Download the cli agent from jenkins - wget http://localhost:8080/jnlpJars/jenkins-cli.jar
-  -- Install the plugin - java -jar jenkins-cli.jar -s http://localhost:8080/   -auth jenkins:[Token]  install-plugin ssh-slaves:3.1031.v72c6b_883b_869
+- update the ssh-slaves plugin from jenkins-cli (see instructions down here)
 - create the Nodes in Jenkins
 - add /home/jenkins as the folder
 - use the agent IP as printed in the script.
 - Add the PRIVATE KEY (printed when the script ends) to the user profile.
 - Select "Manualy trusted key verification strategy" in the ssh connection settings.
-  
+
+## Update ssh-slaves
+- Create a Jenkins user Token
+- Download the cli agent from jenkins - wget http://localhost:8080/jnlpJars/jenkins-cli.jar
+- Install the plugin - java -jar jenkins-cli.jar -s http://localhost:8080/   -auth jenkins:[Token]  install-plugin ssh-slaves:3.1031.v72c6b_883b_869
+
 ## Features
 
 - Jenkins master with persistent volume
